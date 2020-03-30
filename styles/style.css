@@ -16,7 +16,7 @@
   font-family: 'Poppins', sans-serif;
 }
 .navBar a:hover {
-  background-color: #white;
+  background-color: white;
   color: black;
 }
 .navBar a.active {
@@ -38,3 +38,4 @@
 }
 body{
   background-color: #ebe8e4;
+  font-family: 'PT Serif', serif;}
