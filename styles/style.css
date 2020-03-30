@@ -19,7 +19,7 @@
   color: black;
 }
 .navBar a.active {
-  background-color: #3498DB ;
+  background-color: #009aed ;
   color: white;
 }
 .navBar .active {
@@ -28,8 +28,9 @@
 }
 
 #title {
-  font-size: 37px;
-  color: black;
+  font-family: 'Righteous', cursive;
+  font-size: 50px;
+  color: #009aed;
   text-align: center;
   padding: 10px;
   border-bottom: 3px solid black;
