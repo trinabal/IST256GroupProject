@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Destination</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Poppins|Righteous&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Poppins|Righteous&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="navBar">
@@ -16,10 +16,29 @@
       <a href="about.html">About</a>
     </div>
     <h1 id="title">VacayPets</h1>
-    <div>
-      Add user inputs and API calls to this page
-
+    <div id="locationBox">
+      <label>Enter city name:</label>
+      <input type="text" id="locationInputBox"></input>
+      <button id="searchButton" onclick="findLocation();">GO</button>
     </div>
+
+
+
+
+    <!-- <div id="checkButtons" style="display:none;">
+      <label>Select Location Area</label>
+      <input type= radio name="yes" id="yes">Yes</input>
+      <input type= radio name="no" id="no">No</input>
+      <button id="choiceButton" onclick="radioChoice();">Submit</button>
+    </div> -->
+
+
+    <!-- <div class="card">
+      <div id="locationCard">
+        <p id="cityName"></p>
+        <p id="countryName"></p>
+      </div>
+    </div> -->
 
     <script src="scripts/script.js" defer></script>
   </body>

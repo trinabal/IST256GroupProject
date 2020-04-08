@@ -38,4 +38,10 @@
 }
 body{
   background-color: #ebe8e4;
-  font-family: 'PT Serif', serif;}
+  font-family: 'PT Serif', serif;
+}
+
+
+#foodCheckButtons{
+  display: none;
+}
