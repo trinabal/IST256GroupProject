@@ -16,13 +16,13 @@ function findLocation(){
 	    if (request.status == 200)
 			{
 				results = data.location_suggestions;
-        console.log(data);
-        console.log(results);
+        // console.log(data);
+        // console.log(results);
         for (let i = 0; i < results.length; i++)
         {
-          console.log(results[i].title);
-          console.log(results[i].country_name);
-          console.log(results[i].city_id);
+          // console.log(results[i].title);
+          // console.log(results[i].country_name);
+          // console.log(results[i].city_id);
 
           cityID = results[i].city_id;
           entityID = results[i].entity_id;
@@ -45,8 +45,8 @@ function getCuisines(){
       if (request.status == 200)
       {
         results = data.cuisines;
-        console.log(data);
-        console.log(results);
+        // console.log(data);
+        // console.log(results);
 
         for (let i = 0; i < results.length; i++)
         {
@@ -65,11 +65,11 @@ function getCuisines(){
   				let radioText = document.createTextNode(results[i].cuisine.cuisine_name);
   				radioLabel.appendChild(radioText);
 
+					let rdiv = document.createElement("div");
   				document.querySelector("#radioButtonsDiv").appendChild(radioBtn);
           document.querySelector("#radioButtonsDiv").appendChild(radioLabel);
         }
         document.querySelector("#foodCheckButtons").style.display = "block";
-        document.query
       }
     }
     request.send();
