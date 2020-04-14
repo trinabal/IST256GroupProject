@@ -45,3 +45,77 @@ body{
 #foodCheckButtons{
   display: none;
 }
+
+#firstnameBox{
+  margin-left: 100px;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+#lastnameBox{
+  margin-left: 100px;
+  padding: 5px;
+}
+
+#emailBox{
+  margin-left: 100px;
+  padding: 5px;
+}
+
+#addressBox{
+  margin-left: 100px;
+  padding: 5px;
+}
+#addressInputBox{
+  width: 44%;
+}
+
+#cityBox{
+  margin-left: 100px;
+  padding: 5px;
+}
+#stateBox{
+  margin-left: 100px;
+  padding: 5px;
+}
+#phoneBox{
+  margin-left: 100px;
+  padding: 5px;
+}
+p{
+  margin-left: 100px;
+  padding: 5px;
+
+}
+
+#form1, #form2{
+  margin-left: 100px;
+  padding: 5px;
+}
+
+#petlistBox{
+  margin-left: 100px;
+  padding: 5px;
+}
+
+#petlistInputBox{
+  width: 50%;
+  height: 100px;
+}
+
+#submitButton{
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #009aed;
+  padding: 5px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+#locationBox2{
+  margin-left: 100px;
+  padding: 5px;
+  margin-top: 30px;
+}
