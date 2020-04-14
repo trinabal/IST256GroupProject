@@ -16,9 +16,25 @@
       <a href="about.html">About</a>
     </div>
     <h1 id="title">VacayPets</h1>
-    <div>
-      Add animal images and info from API here
+   <div id="locationBox2">
+      <label>Enter city name:</label>
+      <input type="text" id="locationInputBox2"></input>
+      <button id="searchButton" onclick="findLocation();">GO</button>
+    </div>
 
+    <div>
+      <p>Select animal type<p>
+
+    </div>
+    <div id="form2">
+      <form>
+        <input type="radio" id="dog" name="type of pet" value="dog">
+        <label for="dog">Dog</label><br>
+        <input type="radio" id="cat" name="type of pet" value="cat">
+        <label for="cat">Cat</label><br>
+        <input type="radio" id="other" name="type of pet" value="other">
+        <label for="other">Other</label><br>
+      </form>
     </div>
 
     <script src="scripts/script.js" defer></script>
