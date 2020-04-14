@@ -17,8 +17,63 @@
     </div>
     <h1 id="title">VacayPets</h1>
     <div>
-      Add user inputs for application here
+     <div class="applicationboxes">
+        <div id="firstnameBox">
+        <label>First Name:</label>
+        <input type="text" id="firstnameInputBox"></input>
+        </div>
 
+        <div id="lastnameBox">
+        <label>Last Name:</label>
+        <input type="text" id="lastnameInputBox"></input>
+        </div>
+
+        <div id="emailBox">
+        <label>Email:</label>
+        <input type="text" id="emailInputBox"></input>
+        </div>
+
+        <div id="addressBox">
+        <label>Address:</label>
+        <input type="text" id="addressInputBox"></input>
+        </div>
+
+        <div id="cityBox">
+        <label>City:</label>
+        <input type="text" id="cityInputBox"></input>
+        </div>
+
+        <div id="stateBox">
+        <label>State:</label>
+        <input type="text" id="stateInputBox"></input>
+        </div>
+
+        <div id="phoneBox">
+        <label>Phone Number:</label>
+        <input type="text" id="phoneInputBox"></input>
+        </div>
+
+
+         <p> Do you have any other pets? </p>
+         
+      <div id="form1">
+        <form>
+          <input type="radio" id="yes" name="has other pets" value="yes">
+          <label for="yes">Yes</label><br>
+          <input type="radio" id="female" name="has other pets" value="no">
+          <label for="no">No</label><br>
+        </form>
+      </div>
+
+        <p> If YES then please list them below </p>
+        <div id="petlistBox">
+        <input type="text" id="petlistInputBox"></input>
+        </div>
+
+
+        <button id="submitButton" onclick="submitApplication();">SUBMIT</button>
+
+        </div>
     </div>
 
     <script src="scripts/script.js" defer></script>
