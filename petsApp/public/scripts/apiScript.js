@@ -56,7 +56,8 @@ function getCuisines(){
 					let rdiv = document.createElement("div");
   				document.querySelector("#radioButtonsDiv").appendChild(radioBtn);
           document.querySelector("#radioButtonsDiv").appendChild(radioLabel);
-        }
+					document.querySelector("#radioButtonsDiv").appendChild(document.createElement("br"));
+				}
         document.querySelector("#foodCheckButtons").style.display = "block";
       }
     }
@@ -81,18 +82,21 @@ function getRestaurants() {
       if (request.status == 200)
       {
         results = data.restaurants;
-        for (let i = 0; i < results.length; i++)
-        {
-          let r = results[0].restaurant;
-          console.log("restaurantId: "+ r.id);
-          document.querySelector("#restName").innerHTML = r.name;
-          document.querySelector("#restUrl").innerHTML = "Website";
-          document.querySelector("#restUrl").href = r.url;
-          document.querySelector("#location").innerHTML = r.location.address;
-          document.querySelector("#city").innerHTML = r.location.city;
-          document.querySelector("#timings").innerHTML = r.timings;
-          document.querySelector("#priceRange").innerHTML = r.price_range;
-        }
+				for (let k = 0; k < 2; k++)
+				{
+					let r = results[k].restaurant;
+
+	        for (let i = 0; i < results.length; i++)
+	        {
+	          console.log("restaurantId: "+ r.id);
+	          document.querySelector("#restName" + k).innerHTML = r.name;
+	          document.querySelector("#restUrl" + k).innerHTML = "Website";
+	          document.querySelector("#restUrl" + k).href = r.url;
+	          document.querySelector("#location" + k).innerHTML = r.location.address;
+	          document.querySelector("#city" + k).innerHTML = r.location.city;
+	          document.querySelector("#timings" + k).innerHTML = r.timings;
+	        }
+				}
       }
     }
     request.send();
