@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Application</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Poppins|Righteous&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="navBar">
+      <a href="index.html">Home</a>
+      <a href="destination.html">Destination</a>
+      <a href="food.html">Food and Drink</a>
+      <a href="animals.html">Available Animals</a>
+      <a href="application.html" class="active">Application</a>
+      <a href="about.html">About</a>
+    </div>
+    <h1 id="title">VacayPets</h1>
+
+    <form id="appForm" action="/applications" enctype='application/x-www-form-urlencoded'>
+      <div class="applicationboxes">
+        <div id="nameBox">
+          <label>Name:</label>
+          <input type="text" id="name" name="name"></input>
+        </div>
+        <div id="emailBox">
+          <label>Email:</label>
+          <input type="text" id="email" name="email"></input>
+        </div>
+        <div id="addressBox">
+          <label>Address:</label>
+          <input type="text" id="address" name="address"></input>
+        </div>
+        <div id="phoneBox">
+          <label>Phone Number:</label>
+          <input type="text" id="number" name="number"></input>
+        </div>
+        <div id="petBox">
+          <label>Name of pet to adopt:</label>
+          <input type="text" id="pet" name="pet"></input>
+        </div>
+
+      </div>
+      <input type="submit" value="Submit Application" id="submit" class="formBtn">
+      <input type="submit" value="Update Application" id="updateApp" class="formBtn">
+      <input type="submit" value="Delete Application" id="deleteApp" class="formBtn">
+    </form>
+    <p id="appListTitle">Applications</p>
+    <div id="applicationList">
+    </div>
+
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/apiScript.js" defer></script>
+  </body>
+</html>
