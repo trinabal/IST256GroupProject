@@ -4,7 +4,7 @@
 }
 body{
   background-color: #ebe8e4;
-  font-family: 'PT Serif', serif;
+  font-family: 'Poppins', sans-serif;
 }
 .navBar {
   background-color: #d9d3cc;
@@ -41,9 +41,15 @@ body{
   border-bottom: 3px solid #d9d3cc;
 }
 
-#animalTitle{
+#animalTitle, #foodTitle{
   text-align: center;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+#foodTitle{
+  padding-top: 15px;
+  font-size: 25px;
 }
 
 #animalDiv{
@@ -91,10 +97,42 @@ body{
   padding: 16px 32px;
 }
 
-
+#userInputBox, #foodCheckButtons{
+  margin: 50px;
+  width: 50%;
+}
 #foodCheckButtons{
   display: none;
+  width: 300px;
 }
+#food1{
+  position:absolute;
+  top: 200px;
+  left: 50%;
+  width: 700px;
+  margin-right: 60px;
+}
+
+#food2{
+  position:absolute;
+  top: 600px;
+  left: 50%;
+  width: 700px;
+  margin-right: 60px;
+  margin-bottom: 50px;
+}
+.restaurantCards{
+    margin-left: 40px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+#restaurantCard0, #restaurantCard1{
+  padding: 20px;
+}
+
 
 #nameBox, #emailBox, #addressBox, #phoneBox, #petBox{
   margin-bottom: 30px;
