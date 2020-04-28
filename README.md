@@ -7,5 +7,8 @@ npm install cors in case of any cors errors when using APIs
 node appserver.js  
 navigate to 127.0.0.1:3000  
 
+API functionalities are on the Food and Drink tab
+CRUD functionalities are on the Application page
+
 Errors are displayed in the console for CRUD update and delete methods, even though the functionalities work.   
 This might just be a browser issue.   

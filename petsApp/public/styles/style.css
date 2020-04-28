@@ -41,18 +41,15 @@ body{
   border-bottom: 3px solid #d9d3cc;
 }
 
-#animalTitle, #foodTitle{
+#foodTitle, #destTitle, #animalTitle{
+  padding-top: 15px;
+  font-size: 25px;
   text-align: center;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-
-}
-#foodTitle{
-  padding-top: 15px;
-  font-size: 25px;
 }
 
-#animalDiv{
+#animalDiv, #placesDiv{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -64,7 +61,7 @@ body{
   width: 300px;
   justify-content: space-around;
 }
-.image {
+.image{
   opacity: 1;
   display: block;
   width: 100%;
@@ -161,29 +158,23 @@ body{
   font-family: 'Poppins', sans-serif;
   color: white;
 }
+.centerDiv{
+  text-align: center;
+}
 
 #applicationList, #appListTitle{
   margin: 20px;
 }
 
-#indexDIV{
+#indexDIV, #aboutDIV{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
  }
 
-.indexpics{
-  width: 300px;
-}
-
-#aboutDIV{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.indexpics, .aboutpics{
+  margin: 3px;
+  width: 250px;
   justify-content: space-around;
-}
-
-.aboutpics{
-  width: 300px;
 }
