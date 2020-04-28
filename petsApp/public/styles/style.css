@@ -98,7 +98,8 @@ body{
 }
 
 #userInputBox, #foodCheckButtons{
-  margin: 50px;
+  margin-top: 20px;
+  margin-left: 50px;
   width: 50%;
 }
 #foodCheckButtons{
@@ -108,7 +109,7 @@ body{
 #food1{
   position:absolute;
   top: 200px;
-  left: 50%;
+  left: 35%;
   width: 700px;
   margin-right: 60px;
 }
@@ -116,7 +117,7 @@ body{
 #food2{
   position:absolute;
   top: 600px;
-  left: 50%;
+  left: 35%;
   width: 700px;
   margin-right: 60px;
   margin-bottom: 50px;
@@ -190,4 +191,6 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+
 }
